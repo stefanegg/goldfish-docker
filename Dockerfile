@@ -7,4 +7,4 @@ RUN apk add --no-cache bash curl \
     && curl -L -o /app/goldfish https://github.com/Caiyeon/goldfish/releases/download/$GOLDFISH_VERSION/goldfish-linux-amd64 \
     && chmod a+x /app/goldfish
 
-CMD ["/app/goldfish"]
+ENTRYPOINT ["/app/goldfish"]
